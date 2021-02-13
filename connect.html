@@ -6,55 +6,100 @@
     
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Berkshire+Swash" />
+    <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <link rel="stylesheet" href="css/styles.css" />
+
 
     <title>Women Love Beer Too</title>
 </head>
 <body>
     <header>
-        <div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Connect</a></li>
-            </ul>
-        </div> 
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="img/wlb2Logo.png" width="75"></a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#wlb2NavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="wlb2NavBar">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item active"><a class="nav-link mx-1" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link mx-1" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link mx-1" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link mx-1" href="reviews.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link mx-1" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link mx-1" href="#">Connect</a></li>
+                    </ul>
+                </div>
+        </nav>
     </header>
+    <hr>
+
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="contactName" class="formTitle">Name</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email" class="formTitle">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="textArea" class="formTitle">Message</label>
+                        <textarea class="form-control" id="textArea" rows="5" cols="30">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
     <footer>
-        <div>
-        <h4>Women Love Beer Too</h4>
-        <img src="img/wlb2Logo.png" alt="Women Love too Logo" width="100">
-        <form>
-            <label for="newsletterSignUp">Sign up for Our Newsletter!</label>
-            <input type="email" id="newsletterSignUp" name="email" placeholder="E-mail address">
-        </form>
-        </div>
-        <div>
-            <h4>Links</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Connect</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Socials</h4>
-            <ul>
-                <li><a href="www.instagram.com/womenlovebeer_too">Instagram</a></li>
-                <li><a href="www.untappd.com/womenlovebeer_too">Untappd</a></li>
-                <li><a href="www.facebook.com/womenlovebeertoo">Facebook</a></li>
-                <li><a href="www.twitter.com/womenlovebeerto">Twitter</a></li>
-                <li><a href="www.pinterest.com/womenlovebeertoo">Pinterest</a></li>
-                <li><a href="mailto:womenlovebeertoo@gmail.com" target="_blank">Email</a></li>
-            </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Women Love Beer Too</h4>
+                    <img src="img/wlb2Logo.png" alt="Women Love too Logo" width="100">
+                    <form>
+                        <label for="newsletterSignUp">Sign up for Our Newsletter!</label>
+                        <input type="email" id="newsletterSignUp" name="email" placeholder="E-mail address">
+                    </form>
+                    </div>
+                    <div class="col">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-info">Home</a></li>
+                            <li><a href="news.html" class="text-info">News</a></li>
+                            <li><a href="blog.html" class="text-info">Blog</a></li>
+                            <li><a href="reviews.html" class="text-info">Reviews</a></li>
+                            <li><a href="about.html" class="text-info">About</a></li>
+                            <li><a href="#" class="text-info">Connect</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>Socials</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="www.instagram.com/womenlovebeer_too" class="text-info">Instagram</a></li>
+                            <li><a href="www.untappd.com/womenlovebeer_too" class="text-info">Untappd</a></li>
+                            <li><a href="www.facebook.com/womenlovebeertoo" class="text-info">Facebook</a></li>
+                            <li><a href="www.twitter.com/womenlovebeerto" class="text-info">Twitter</a></li>
+                            <li><a href="www.pinterest.com/womenlovebeertoo" class="text-info">Pinterest</a></li>
+                            <li><a href="mailto:womenlovebeertoo@gmail.com"  class="text-info" target="_blank">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
@@ -62,3 +107,4 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+</html>

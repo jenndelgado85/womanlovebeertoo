@@ -1,0 +1,42 @@
+body {
+    font-family: "Open Sans" sans-serif;
+}
+
+main h1 {
+    font-family: "Berkshire Swash";
+}
+
+.sectionParagraph {
+    font-family: "Open Sans";
+}
+
+h2, h3 {
+    font-family: "Berkshire Swash";
+    text-align: center;
+}
+
+#socials {
+    margin-right: 1rem;
+}
+
+header, footer {
+    background-color: #c0c0c0;
+}
+
+h4 {
+    font-family: "Berkshire Swash";
+}
+h4 ul {
+    font-family: "Open Sans";
+}
+
+p {
+    font-family: "Open Sans";
+}
+ h5 {
+    font-family: "Berkshire Swash";
+ }
+
+ .formTitle {
+    font-family: "Berkshire Swash";
+ }
